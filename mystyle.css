@@ -1,0 +1,469 @@
+/* 전체 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #FFF9F9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 헤더 스타일 */
+header {
+    background: linear-gradient(to bottom, #FFD7E9, #FFF9F9);
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header h1 {
+    color: #FF5C8D;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+header p {
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 벚꽃 잎 애니메이션 효과 */
+.cherry-blossom {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #FFD7E9;
+    border-radius: 15px 0px;
+    opacity: 0.7;
+    animation: falling 10s infinite linear;
+}
+
+.cherry-blossom:nth-child(1) {
+    left: 10%;
+    animation-delay: 1s;
+    animation-duration: 7s;
+}
+
+.cherry-blossom:nth-child(2) {
+    left: 30%;
+    animation-delay: 3s;
+    animation-duration: 9s;
+}
+
+.cherry-blossom:nth-child(3) {
+    left: 50%;
+    animation-delay: 5s;
+    animation-duration: 8s;
+}
+
+.cherry-blossom:nth-child(4) {
+    left: 70%;
+    animation-delay: 2s;
+    animation-duration: 10s;
+}
+
+.cherry-blossom:nth-child(5) {
+    left: 90%;
+    animation-delay: 4s;
+    animation-duration: 6s;
+}
+
+@keyframes falling {
+    0% {
+        top: -10px;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 100%;
+        transform: rotate(360deg);
+    }
+}
+
+/* 네비게이션 스타일 */
+nav {
+    background-color: #FF8FB1;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 166px;
+    width: 100%;
+    z-index: 99;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li label {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    display: inline-block;
+}
+
+nav ul li label:hover {
+    background-color: #FF5C8D;
+}
+
+/* 메인 콘텐츠 스타일 */
+main {
+    display: flex;
+    padding: 0 20px;
+    overflow-y: auto;
+    margin-top: 250px;
+    margin-bottom: 136px;
+    height: calc(100vh - 396px);
+    justify-content: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+section h2 {
+    color: #FF5C8D;
+    margin-bottom: 20px;
+    border-bottom: 2px dashed #FFD7E9;
+    padding-bottom: 10px;
+}
+
+/* 소개 섹션 스타일 */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.intro-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.intro-image {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 짝궁 소개 섹션 스타일 */
+.partner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.partner-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.partner-image {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.partner-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 인터뷰 섹션 스타일 */
+.interview {
+    background-color: #FFF0F5;
+}
+
+.interview-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.interview-content p {
+    margin-bottom: 15px;
+}
+
+.interview-content p strong {
+    color: #FF5C8D;
+}
+
+.interview-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.interview-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 20문 20답 섹션 스타일 */
+.qa-section {
+    background-color: #FFF0F5;
+}
+
+.qa-list {
+    list-style-type: none;
+}
+
+.qa-list li {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #FFD7E9;
+}
+
+.qa-list li:last-child {
+    border-bottom: none;
+}
+
+.qa-list strong {
+    color: #FF5C8D;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* 서울숲 소개 섹션 스타일 */
+.seoul-forest {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.forest-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.forest-image {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.forest-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 탭 스타일 */
+.tab-container {
+    position: relative;
+    margin-top: 30px;
+}
+
+.tab-menu {
+    display: flex;
+    border-bottom: 2px solid #FFD7E9;
+    margin-bottom: 20px;
+}
+
+.tab-menu label {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #FFF0F5;
+    margin-right: 5px;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s;
+}
+
+.tab-menu label:hover {
+    background-color: #FFD7E9;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+#tab1:checked ~ #tab1-content,
+#tab2:checked ~ #tab2-content,
+#tab3:checked ~ #tab3-content,
+#tab4:checked ~ #tab4-content {
+    display: block;
+}
+
+/* 탭 선택 상태 */
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #FFD7E9;
+    font-weight: bold;
+}
+
+/* 메뉴 선택에 따른 섹션 표시/숨김 */
+#about-me, #partner, #interview, #qa, #seoul-forest {
+    display: none;
+}
+
+#menu-about-me:checked ~ main #about-me,
+#menu-partner:checked ~ main #partner,
+#menu-interview:checked ~ main #interview,
+#menu-qa:checked ~ main #qa,
+#menu-seoul-forest:checked ~ main #seoul-forest {
+    display: block;
+}
+
+/* 선택된 메뉴의 스타일 변경 */
+#menu-about-me:checked ~ nav .about-me-label,
+#menu-partner:checked ~ nav .partner-label,
+#menu-interview:checked ~ nav .interview-label,
+#menu-qa:checked ~ nav .qa-label,
+#menu-seoul-forest:checked ~ nav .seoul-forest-label {
+    background-color: #FF5C8D;
+}
+
+/* 하이라이트 효과 */
+.highlight {
+    background-color: #FFF0F5;
+    padding: 10px;
+    border-left: 3px solid #FF5C8D;
+    margin: 15px 0;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #FF8FB1;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+    
+    nav {
+        top: 110px;
+    }
+    
+    main {
+        margin-top: 170px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    .intro, .partner, .seoul-forest {
+        flex-direction: column;
+    }
+    
+    .tab-menu {
+        flex-wrap: wrap;
+    }
+    
+    .tab-menu label {
+        margin-bottom: 5px;
+    }
+}
+
+/* 벚꽃 테마 색상 추가 효과 */
+::selection {
+    background-color: #FFD7E9;
+    color: #FF5C8D;
+}
+
+/* 추가 애니메이션 효과 */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 섹션 호버 효과 */
+section:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* 이미지 호버 효과 */
+.intro-image img:hover,
+.partner-image img:hover,
+.forest-image img:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
