@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025년 봄 - 서울의 길을 걷다!</title>
+    <title>2025년 봄, 서울숲을 걷다!</title>
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Noto+Sans+KR:wght@100..900&family=Pacifico&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Bagel+Fat+One&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&family=Pacifico&family=Poor+Story&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- 메뉴 선택 라디오 버튼 -->
     <input type="radio" name="menu" id="menu-about-me" checked>
     <input type="radio" name="menu" id="menu-partner">
-    <input type="radio" name="menu" id="menu-interview">
-    <input type="radio" name="menu" id="menu-qa">
     <input type="radio" name="menu" id="menu-seoul-forest">
 
     <header>
@@ -20,103 +22,163 @@
         <div class="cherry-blossom"></div>
         <div class="cherry-blossom"></div>
         <div class="cherry-blossom"></div>
-        <h1>2025년 봄 - 서울의 길을 걷다!</h1>
-        <p>제주에 올레길이 있다면, 서울에는 두드림길이 있다. 2025년 봄!! 건기에 딱 좋은 계절! 서울의 산책길을 찾아보고, 짝꿍과 함께 산책을 다녀온다.</p>
+        <h1>2025년 봄, 서울숲을 걷다!</h1>
+        <p>2025년의 봄, 걷기에 딱 좋은 계절.<br>
+            서울의 숲길을 따라, 짝꿍과 나란히 천천히 걸어본다.</p>
     </header>
 
     <nav>
         <ul>
             <li><label for="menu-about-me" class="about-me-label">나란 사람</label></li>
-            <li><label for="menu-partner" class="partner-label">짝꿍을 소개합니다</label></li>
-            <li><label for="menu-interview" class="interview-label">짝꿍과의 인터뷰</label></li>
-            <li><label for="menu-qa" class="qa-label">20문 20답</label></li>
+            <li><label for="menu-partner" class="partner-label">짝꿍 이야기</label></li>
             <li><label for="menu-seoul-forest" class="seoul-forest-label">서울숲 소개</label></li>
         </ul>
     </nav>
 
     <main>
         <section id="about-me">
-            <h2>나란 사람</h2>
+            <h2 class="fade-in-text">나란 사람</h2>
             <div class="intro">
                 <div class="intro-text">
-                    <p>안녕하세요! 저는 [이름]입니다. 저에 대한 간단한 소개와 제 생각을 공유하고자 합니다.</p>
-                    <p>저는 [전공/학과]에서 공부하고 있으며, [취미/관심사]에 관심이 많습니다.</p>
-                    <p>이번 학기에 산책길을 주제로 프로젝트를 진행하면서 서울의 아름다운 길을 발견하게 되었습니다.</p>
-                    <p>특히 서울숲은 도심 속 자연을 만끽할 수 있는 곳으로, 벚꽃이 필 때 가장 아름다운 모습을 보여줍니다.</p>
+                    <p class="fade-in-text">안녕하세요! 저는 <span class="highlight-word">이지현</span>입니다. 이번 프로젝트를 통해 저에 대해 소개할 수 있게 되어 반갑습니다. 현재 건국대학교에 재학 중이며, 컴퓨터공학을 이수하고 있습니다.</p>
+                    <p class="fade-in-text">저는 사람들과 어울리는 걸 좋아하고, 새로운 공간이나 맛있는 음식을 찾아다니는 걸 즐깁니다. 시간 날 때는 친구들과 서울 곳곳을 돌아다니며 카페 탐방을 하거나, 자연 속에서 걷는 소소한 시간을 소중히 여깁니다.</p>
+                    <p class="fade-in-text">프론트엔드 개발에도 꾸준한 관심을 가지고 있으며, <span class="highlight-word">웹이라는 공간</span> 안에서 사람들과 소통하고 연결되는 방식에 매력을 느껴 공부를 시작하게 되었습니다. 개발을 할 땐 협업을 중요하게 생각하고, 사용자에게 편안한 경험을 줄 수 있는 인터페이스를 고민하는 걸 좋아합니다.</p>
+                    <p class="fade-in-text">이번 산책길 프로젝트는 수업 과제를 통해 시작하게 되었습니다. 처음에는 '서울의 산책길을 탐방하고 소개한다'는 주제가 다소 낯설게 느껴졌지만, 직접 길을 걸으며 풍경을 눈으로 보고, 몸으로 느끼는 과정 속에서 점점 흥미를 가지게 되었습니다.</p>
+                    <p class="fade-in-text">특히 인상 깊었던 장소는 <span class="highlight-word">서울숲</span>이었습니다. 서울숲은 도심 한가운데 있음에도 불구하고, 나무와 바람, 햇살이 어우러진 평화로운 분위기를 지니고 있으며, 봄에는 벚꽃이 만개해 산책길 전체가 환하게 빛나는 장면을 연출합니다.</p>
+                    <p class="fade-in-text">이번 경험을 통해 저는 무언가를 '<span class="highlight-word">기록한다는 것</span>'의 의미를 다시 생각하게 되었고, 바쁜 일상 속에서도 잠시 걸음을 늦추고 주변을 돌아보는 여유를 잊지 말아야겠다는 다짐을 하게 되었습니다. 과제로 시작했지만, 오히려 일상 속 소중한 시간을 다시 돌아보게 만든 의미 있는 시간이었습니다. 감사합니다.</p>
                 </div>
                 <div class="intro-image">
-                    <img src="/api/placeholder/400/300" alt="내 사진">
+                    <img src="/Webprogramming/me.jpeg" alt="내 사진">
                 </div>
             </div>
         </section>
 
+        <!-- 통합된 짝꿍 섹션 -->
         <section id="partner">
-            <h2>짝꿍을 소개합니다</h2>
-            <div class="partner">
-                <div class="partner-info">
-                    <p>제 짝꿍은 [짝꿍 이름]입니다. [짝꿍에 대한 간단한 소개]</p>
-                    <p>함께 서울숲을 방문하며 자연과 도시의 조화로운 모습을 경험했습니다.</p>
-                    <p>서로 다른 관점에서 같은 공간을 바라보는 것이 흥미로웠고, 많은 대화를 나눌 수 있었습니다.</p>
-                    <p>짝꿍은 특히 [짝꿍의 특징이나 장점]에 관심이 많고, 함께하는 시간이 즐거웠습니다.</p>
-                </div>
-                <div class="partner-image">
-                    <img src="/api/placeholder/400/300" alt="짝꿍 사진">
-                </div>
-            </div>
-        </section>
-
-        <section id="interview" class="interview">
-            <h2>짝꿍과의 인터뷰</h2>
-            <div class="interview-content">
-                <p><strong>Q: 서울숲에 방문한 소감은 어떤가요?</strong></p>
-                <p>A: [짝꿍의 답변을 여기에 작성하세요.]</p>
+            <h2>짝꿍과 함께한 이야기</h2>
+            
+            <!-- 탭 메뉴 추가 -->
+            <div class="partner-tabs">
+                <input type="radio" name="partner-tabs" id="partner-tab1" checked>
+                <label for="partner-tab1">소개</label>
                 
-                <p><strong>Q: 서울숲에서 가장 인상 깊었던 공간은 어디인가요?</strong></p>
-                <p>A: [짝꿍의 답변을 여기에 작성하세요.]</p>
+                <input type="radio" name="partner-tabs" id="partner-tab2">
+                <label for="partner-tab2">20문 20답</label>
+            
+                <!-- 짝꿍 소개 내용 -->
+                <div class="partner-content" id="partner-tab1-content">
+                    <div class="partner">
+                        <div class="partner-info">
+                            <p>제 짝꿍은 <span class="highlight-word">이승혁</span>입니다. 컴퓨터공학부 22학번으로 저와 같은 전공을 공부하고 있습니다. 처음 만났을 때 첫인상은 무척 <span class="highlight-word">생각이 깊고 진중한</span> 느낌이었는데, 점차 대화를 나누면서 알게 된 그의 진짜 모습은 <span class="highlight-word">밝고 활발한 성격</span>을 지닌 친구였습니다.</p>
+                            <p>이 프로젝트를 함께 시작하면서 서로에 대해 더 많이 알아갈 수 있는 좋은 계기가 되었습니다. 같은 컴퓨터공학부 학생으로서 전공 관련 이야기를 나누기도 했지만, 서울숲을 함께 걸으며 전공 이외의 다양한 주제에 대해서도 대화를 나눌 수 있었습니다. 프로그래밍 언어부터 취미 생활, 앞으로의 진로까지 이런저런 이야기를 나누며 서로에 대한 이해도를 높일 수 있었습니다.</p>
+                            <p>함께 서울숲을 거닐며 느낀 점은 같은 전공을 공부하더라도 <span class="highlight-word">각자가 바라보는 관점이 다를 수 있다</span>는 것이었습니다. 저는 주로 공원의 디자인적 요소와 동선의 흐름에 관심을 가졌다면, 승혁님은 생태적 환경과 기능적 측면에 더 관심을 보였습니다. 이러한 서로 다른 시각은 하나의 공간을 더 풍부하게 이해할 수 있는 기회가 되었고, 특히 도시 속 자연 공간이 어떤 의미를 가지는지에 대해 깊이 있는 대화를 나눌 수 있었습니다.</p>
+                            <p>서울숲을 함께 거닐면서 승혁님의 <span class="highlight-word">탐구심과 관찰력</span>이 뛰어남을 알게 되었습니다. 그는 평소 <span class="highlight-word">생각이 깊은 성격</span>답게 주변 환경을 세심하게 관찰하고 의미를 찾아내려고 노력했습니다. 또한 학창 시절부터 <span class="highlight-word">사진 찍기</span>에 관심이 많아 서울숲의 아름다운 풍경을 다양한 각도에서 담아내며 그만의 시선으로 공간을 기록했습니다.</p>
+                            <p>처음에는 단순한 학교 과제라고 생각했던 이 산책이 점차 의미 있는 시간으로 변화해갔습니다. 승혁님과 저는 코딩과 프로그래밍에 대한 열정뿐만 아니라 자연과 도시 환경에 대한 관심사도 공유하게 되었습니다. 특히 컴퓨터 전공자로서 디지털 세계에 매몰되기 쉬운데, 이렇게 실제 자연 속에서 시간을 보내며 <span class="highlight-word">새로운 관점</span>을 얻을 수 있었던 것은 매우 소중한 경험이었습니다.</p>
+                            <p>짝꿍과의 만남을 통해 단순히 전공 지식만이 아닌, <span class="highlight-word">다양한 관점에서 세상을 바라보는 방법</span>을 배울 수 있었습니다. 앞으로도 승혁님과 함께 전공 공부는 물론, 다양한 경험을 통해 서로 성장해 나갈 수 있기를 기대합니다. 같은 학과 친구이자 이제는 좋은 동료가 된 그와의 만남은 대학 생활에서 가장 의미 있는 인연 중 하나가 될 것 같습니다.</p>
+                        </div>
+                        <div class="intro-image">
+                            <img src="/Webprogramming/interview.png" alt="인터뷰 사진">
+                        </div>
+                    </div>
+                </div>
                 
-                <p><strong>Q: 도시 속 자연 공간의 의미는 무엇이라고 생각하나요?</strong></p>
-                <p>A: [짝꿍의 답변을 여기에 작성하세요.]</p>
-            </div>
-            <div class="interview-image">
-                <img src="/api/placeholder/800/400" alt="인터뷰 사진">
+                <!-- 20문 20답 내용 -->
+                <div class="partner-content" id="partner-tab2-content">
+                    <ul class="qa-list">
+                        <li style="--i: 1">
+                            <strong>Q1: 간단하게 자기소개를 해주세요.</strong>
+                            <p>A: 저는 컴퓨터공학부 22학번 2학년 이승혁입니다! 열심히 공부하면서 개발자로서의 꿈을 키워나가고 있어요.</p>
+                        </li>
+                        <li style="--i: 2">
+                            <strong>Q2: 본인을 한 단어로 표현한다면 무엇인가요?</strong>
+                            <p>A: ‘코딩’이라고 표현할 수 있을 것 같아요. 항상 코드를 짜면서 “이게 어떻게 작동하지?”라는 의문과 흥미를 동시에 느껴요.</p>
+                        </li>
+                        <li style="--i: 3">
+                            <strong>Q3: 나를 가장 잘 나타내는 이모지 3개는 무엇인가요?</strong>
+                            <p>A: 🫣, 🥺, ☺️</p>
+                        </li>
+                        <li style="--i: 4">
+                            <strong>Q4: 자주 듣는 오해나 첫인상은 어떤가요?</strong>
+                            <p>A: 많은 분들이 저를 처음 보면 모범생 같다고 말씀하세요. 조용하고 차분한 인상 때문인 것 같아요.</p>
+                        </li>
+                        <li style="--i: 5">
+                            <strong>Q5: 나를 동물로 비유한다면 어떤 동물일까요?</strong>
+                            <p>A: 곰이요! 요즘에는 특히 겨울잠 자듯 집에 콕 박혀서 혼자 시간을 보내는 걸 좋아해서요. 예전에는 다른 동물이었지만 요즘엔 곰이 딱이에요.</p>
+                        </li>
+                        <li style="--i: 6">
+                            <strong>Q6: 최근에 빠진 소확행이 있다면 무엇인가요?</strong>
+                            <p>A: 요즘엔 넷플릭스 보면서 혼자만의 시간을 보내는 게 큰 행복이에요. 편하게 누워서 콘텐츠 보는 그 시간이 참 소중해요.</p>
+                        </li>
+                        <li style="--i: 7">
+                            <strong>Q7: 건국대학교 근처에서 좋아하는 장소는 어디인가요?</strong>
+                            <p>A: 일감호 옆 도서관 뒷문으로 올라가는 길이요. 풍경도 좋고, 조용해서 산책하기 좋아요.</p>
+                        </li>
+                        <li style="--i: 8">
+                            <strong>Q8: 꼭 여행 가보고 싶은 나라나 도시는 어디인가요?</strong>
+                            <p>A: 북유럽, 특히 핀란드에 가보고 싶어요. 따뜻한 커피 한 잔 손에 들고, 차분한 풍경을 바라보며 여유로운 시간을 보내고 싶어요.</p>
+                        </li>
+                        <li style="--i: 9">
+                            <strong>Q9: 인생 영화, 드라마, 혹은 책을 추천해준다면요?</strong>
+                            <p>A: 『날씨가 좋으면 찾아가겠어요』라는 소설을 추천해요. 감성적이고 잔잔한 이야기가 마음 깊이 남는 작품이에요.</p>
+                        </li>
+                        <li style="--i: 10">
+                            <strong>Q10: 본인만의 스트레스 해소법은 무엇인가요?</strong>
+                            <p>A: 저는 그냥 ‘냅다 자기’예요. 혼자만의 시간을 갖고 푹 자는 게 스트레스를 날려주는 최고의 방법인 것 같아요.</p>
+                        </li>
+                        <li style="--i: 11">
+                            <strong>Q11: 버킷리스트 중 하나를 꼽는다면 무엇인가요?</strong>
+                            <p>A: 한 달 동안 즉흥적으로 여행을 떠나보고 싶어요. 계획 없이 자유롭게 떠돌며 나만의 시간을 보내고 싶어요.</p>
+                        </li>
+                        <li style="--i: 12">
+                            <strong>Q12: 좋아하는 인생 문장이나 좌우명이 있다면요?</strong>
+                            <p>A: “남들 다 똑같이 산다.” 이 말이 저에게는 묘하게 위로가 돼요. 결국엔 나도 잘 살아갈 수 있겠다는 희망이 느껴져요.</p>
+                        </li>
+                        <li style="--i: 13">
+                            <strong>Q13: 어릴 때 생각한 어른의 모습과 지금의 나는 어떤가요?</strong>
+                            <p>A: 예전엔 대학생만 봐도 정말 어른 같았는데, 막상 제가 되어보니 아직도 어린아이 같은 면이 많더라고요. 20대도 아직 한참 배우는 중인 것 같아요.</p>
+                        </li>
+                        <li style="--i: 14">
+                            <strong>Q14: 나만의 행복 공식이 있다면 무엇인가요?</strong>
+                            <p>A: 행복 = 돈 × (건강 + 인연 - 돈) + 시간.<br>적당한 돈, 건강한 몸, 좋은 사람들과의 관계, 그리고 여유 있는 시간이 행복을 만든다고 생각해요.</p>
+                        </li>
+                        <li style="--i: 15">
+                            <strong>Q15: 꿈꾸는 직업이나 해보고 싶은 일은 무엇인가요?</strong>
+                            <p>현재는 백엔드 개발자가 되고 싶지만, 다양한 분야를 경험해보면서 진로를 구체화해 나가고 싶어요.</p>
+                        </li>
+                        <li style="--i: 16">
+                            <strong>Q16: 100억 원이 생긴다면 제일 먼저 무엇을 할 건가요?</strong>
+                            <p>부모님 앞에서 머니건으로 돈을 뿌려드릴 거예요! “이걸 언제 다 치우냐…” 하시면서도 분명히 웃으실 것 같아요. 그 모습까지 상상돼요ㅎㅎ</p>
+                        </li>
+                        <li style="--i: 17">
+                            <strong>Q17: 만약 내 인생을 영화로 만든다면 제목은 무엇일까요?</strong>
+                            <p>『느루 떠나는 가온길』이라고 지을 거예요. ‘느루’는 천천히, 오래도록이라는 뜻이고, ‘가온길’은 정직하고 바른 길을 의미해요. 저의 삶의 태도를 담은 제목이에요.</p>
+                        </li>
+                        <li style="--i: 18">
+                            <strong>Q18: 과거로 돌아갈 수 있다면 어느 시점으로 가고 싶나요?</strong>
+                            <p>고등학교 1학년 시절이요. 그때는 정말 하고 싶은 걸 마음껏 했던 시기라, 다시 그 자유로움을 느껴보고 싶어요.</p>
+                        </li>
+                        <li style="--i: 19">
+                            <strong>Q19: 외계인에게 보여주고 싶은 것이 있다면 무엇인가요?</strong>
+                            <p>우리 집이요! 외계인도 초대해서 이런저런 이야기하며 친해지고 싶어요. 지구의 따뜻함을 보여주고 싶기도 하고요.</p>
+                        </li>
+                        <li style="--i: 20">
+                            <strong>Q20: 경험해보고 싶은 다른 학과가 있다면 무엇인가요?</strong>
+                            <p>수학과요! 전공 박람회에서 수학과의 매력을 느끼고 한눈에 반했어요. 수학의 깊이 있는 사고가 멋지다고 생각해요.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <section id="qa" class="qa-section">
-            <h2>20문 20답</h2>
-            <ul class="qa-list">
-                <li>
-                    <strong>Q1: 자신을 한 단어로 표현한다면?</strong>
-                    <p>A: [답변]</p>
-                </li>
-                <li>
-                    <strong>Q2: 가장 좋아하는 계절은?</strong>
-                    <p>A: [답변]</p>
-                </li>
-                <li>
-                    <strong>Q3: 서울에서 가장 좋아하는 장소는?</strong>
-                    <p>A: [답변]</p>
-                </li>
-                <li>
-                    <strong>Q4: 봄에 꼭 하고 싶은 활동은?</strong>
-                    <p>A: [답변]</p>
-                </li>
-                <li>
-                    <strong>Q5: 가장 기억에 남는 산책 경험은?</strong>
-                    <p>A: [답변]</p>
-                </li>
-                <!-- 나머지 질문은 직접 추가하시면 됩니다 -->
-            </ul>
-        </section>
-
+        <!-- 서울숲 소개 섹션 -->
         <section id="seoul-forest">
             <h2>서울숲 소개</h2>
             <div class="seoul-forest">
                 <div class="forest-info">
-                    <p>서울숲은 서울특별시 성동구에 위치한 도시 공원으로, 2005년에 조성되었습니다.</p>
-                    <p>총 면적은 약 1,156,498㎡(35만평)로 여의도 공원의 4.5배에 달하는 크기입니다.</p>
-                    <p>문화예술공원, 체험학습원, 생태숲, 습지생태원 등 다양한 테마 공간으로 구성되어 있습니다.</p>
-                    <p>특히 봄에는 벚꽃이 만개하여 많은 시민들이 찾는 명소입니다.</p>
+                    <p style="--i: 1">서울숲은 서울특별시 성동구에 위치한 도시 공원으로, 2005년에 조성되었습니다.</p>
+                    <p style="--i: 2">총 면적은 약 1,156,498㎡(35만평)로 여의도 공원의 4.5배에 달하는 크기입니다.</p>
+                    <p style="--i: 3">문화예술공원, 체험학습원, 생태숲, 습지생태원 등 다양한 테마 공간으로 구성되어 있습니다.</p>
+                    <p style="--i: 4">특히 봄에는 벚꽃이 만개하여 많은 시민들이 찾는 명소입니다.</p>
                 </div>
                 <div class="forest-image">
                     <img src="/api/placeholder/400/300" alt="서울숲 사진">
@@ -126,13 +188,13 @@
             <div class="tab-container">
                 <div class="tab-menu">
                     <input type="radio" name="tabs" id="tab1" checked>
-                    <label for="tab1">문화예술공원</label>
+                    <label for="tab1" style="--i: 1">문화예술공원</label>
                     <input type="radio" name="tabs" id="tab2">
-                    <label for="tab2">체험학습원</label>
+                    <label for="tab2" style="--i: 2">체험학습원</label>
                     <input type="radio" name="tabs" id="tab3">
-                    <label for="tab3">생태숲</label>
+                    <label for="tab3" style="--i: 3">생태숲</label>
                     <input type="radio" name="tabs" id="tab4">
-                    <label for="tab4">습지생태원</label>
+                    <label for="tab4" style="--i: 4">습지생태원</label>
                 </div>
                 
                 <div class="tab-content" id="tab1-content">
@@ -163,9 +225,8 @@
     </main>
 
     <footer>
-        <p>2025년 봄 - 서울의 길을 걷다! 프로젝트</p>
-        <p>작성자: [이름] | 학과: [학과] | 학번: [학번]</p>
-        <p>짝꿍: [짝꿍 이름] | 학과: [짝꿍 학과] | 학번: [짝꿍 학번]</p>
+        <p>2025년 봄, 서울의 길을 걷다! 프로젝트</p>
+        <p>작성자: 이지현 | 학과: 컴퓨터공학부 | 학번: 202214314</p>
     </footer>
 </body>
 </html>
