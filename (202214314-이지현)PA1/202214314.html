@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025년 봄, 서울숲을 걷다!</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Noto+Sans+KR:wght@100..900&family=Pacifico&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Bagel+Fat+One&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&family=Pacifico&family=Poor+Story&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="radio" name="menu" id="menu-about-me" checked>
+    <input type="radio" name="menu" id="menu-partner">
+    <input type="radio" name="menu" id="menu-seoul-forest">
+    <input type="radio" name="menu" id="menu-visit-info">
+
+    <header>
+        <div class="cherry-blossom"></div>
+        <div class="cherry-blossom"></div>
+        <div class="cherry-blossom"></div>
+        <div class="cherry-blossom"></div>
+        <div class="cherry-blossom"></div>
+        <h1>2025년 봄, 서울숲을 걷다!</h1>
+        <p>2025년의 봄, 걷기에 딱 좋은 계절.<br>
+            서울의 숲길을 따라, 짝꿍과 나란히 천천히 걸어본다.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><label for="menu-about-me" class="about-me-label">나란 사람</label></li>
+            <li><label for="menu-partner" class="partner-label">짝꿍 이야기</label></li>
+            <li><label for="menu-seoul-forest" class="seoul-forest-label">서울숲 소개</label></li>
+            <li><label for="menu-visit-info" class="visit-info-label">이렇게 다녀오세요</label></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about-me">
+            <h2 class="fade-in-text">나란 사람</h2>
+            <div class="intro">
+                <div class="intro-text">
+                    <p class="fade-in-text">안녕하세요! 저는 <span class="highlight-word">이지현</span>입니다. 이번 프로젝트를 통해 저에 대해 소개할 수 있게 되어 반갑습니다. 현재 건국대학교에 재학 중이며, 컴퓨터공학을 이수하고 있습니다.</p>
+                    <p class="fade-in-text">저는 사람들과 어울리는 걸 좋아하고, 새로운 공간이나 맛있는 음식을 찾아다니는 걸 즐깁니다. 시간 날 때는 친구들과 서울 곳곳을 돌아다니며 카페 탐방을 하거나, 자연 속에서 걷는 소소한 시간을 소중히 여깁니다.</p>
+                    <p class="fade-in-text">프론트엔드 개발에도 꾸준한 관심을 가지고 있으며, <span class="highlight-word">웹이라는 공간</span> 안에서 사람들과 소통하고 연결되는 방식에 매력을 느껴 공부를 시작하게 되었습니다. 개발을 할 땐 협업을 중요하게 생각하고, 사용자에게 편안한 경험을 줄 수 있는 인터페이스를 고민하는 걸 좋아합니다.</p>
+                    <p class="fade-in-text">이번 산책길 프로젝트는 수업 과제를 통해 시작하게 되었습니다. 처음에는 '서울의 산책길을 탐방하고 소개한다'는 주제가 다소 낯설게 느껴졌지만, 직접 길을 걸으며 풍경을 눈으로 보고, 몸으로 느끼는 과정 속에서 점점 흥미를 가지게 되었습니다.</p>
+                    <p class="fade-in-text">특히 인상 깊었던 장소는 <span class="highlight-word">서울숲</span>이었습니다. 서울숲은 도심 한가운데 있음에도 불구하고, 나무와 바람, 햇살이 어우러진 평화로운 분위기를 지니고 있으며, 봄에는 벚꽃이 만개해 산책길 전체가 환하게 빛나는 장면을 연출합니다.</p>
+                    <p class="fade-in-text">이번 경험을 통해 저는 무언가를 '<span class="highlight-word">기록한다는 것</span>'의 의미를 다시 생각하게 되었고, 바쁜 일상 속에서도 잠시 걸음을 늦추고 주변을 돌아보는 여유를 잊지 말아야겠다는 다짐을 하게 되었습니다. 과제로 시작했지만, 오히려 일상 속 소중한 시간을 다시 돌아보게 만든 의미 있는 시간이었습니다. 감사합니다.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="me.jpeg" alt="내 사진">
+                </div>
+            </div>
+        </section>
+
+        <section id="partner">
+            <h2>짝꿍과 함께한 이야기</h2>
+            
+            <div class="partner-tabs">
+                <input type="radio" name="partner-tabs" id="partner-tab1" checked>
+                <label for="partner-tab1">소개</label>
+                
+                <input type="radio" name="partner-tabs" id="partner-tab2">
+                <label for="partner-tab2">20문 20답</label>
+            
+                <div class="partner-content" id="partner-tab1-content">
+                    <div class="partner">
+                        <div class="partner-info">
+                            <p>제 짝꿍은 <span class="highlight-word">이승혁</span>입니다. 컴퓨터공학부 22학번으로 저와 같은 전공을 공부하고 있습니다. 처음 만났을 때 첫인상은 무척 <span class="highlight-word">생각이 깊고 진중한</span> 느낌이었는데, 점차 대화를 나누면서 알게 된 그의 진짜 모습은 <span class="highlight-word">밝고 활발한 성격</span>을 지닌 친구였습니다.</p>
+                            <p>이 프로젝트를 함께 시작하면서 서로에 대해 더 많이 알아갈 수 있는 좋은 계기가 되었습니다. 같은 컴퓨터공학부 학생으로서 전공 관련 이야기를 나누기도 했지만, 서울숲을 함께 걸으며 전공 이외의 다양한 주제에 대해서도 대화를 나눌 수 있었습니다. 프로그래밍 언어부터 취미 생활, 앞으로의 진로까지 이런저런 이야기를 나누며 서로에 대한 이해도를 높일 수 있었습니다.</p>
+                            <p>함께 서울숲을 거닐며 느낀 점은 같은 전공을 공부하더라도 <span class="highlight-word">각자가 바라보는 관점이 다를 수 있다</span>는 것이었습니다. 저는 주로 공원의 디자인적 요소와 동선의 흐름에 관심을 가졌다면, 승혁님은 생태적 환경과 기능적 측면에 더 관심을 보였습니다. 이러한 서로 다른 시각은 하나의 공간을 더 풍부하게 이해할 수 있는 기회가 되었고, 특히 도시 속 자연 공간이 어떤 의미를 가지는지에 대해 깊이 있는 대화를 나눌 수 있었습니다.</p>
+                            <p>서울숲을 함께 거닐면서 승혁님의 <span class="highlight-word">탐구심과 관찰력</span>이 뛰어남을 알게 되었습니다. 그는 평소 <span class="highlight-word">생각이 깊은 성격</span>답게 주변 환경을 세심하게 관찰하고 의미를 찾아내려고 노력했습니다. 또한 학창 시절부터 <span class="highlight-word">사진 찍기</span>에 관심이 많아 서울숲의 아름다운 풍경을 다양한 각도에서 담아내며 그만의 시선으로 공간을 기록했습니다.</p>
+                            <p>처음에는 단순한 학교 과제라고 생각했던 이 산책이 점차 의미 있는 시간으로 변화해갔습니다. 승혁님과 저는 코딩과 프로그래밍에 대한 열정뿐만 아니라 자연과 도시 환경에 대한 관심사도 공유하게 되었습니다. 특히 컴퓨터 전공자로서 디지털 세계에 매몰되기 쉬운데, 이렇게 실제 자연 속에서 시간을 보내며 <span class="highlight-word">새로운 관점</span>을 얻을 수 있었던 것은 매우 소중한 경험이었습니다.</p>
+                            <p>짝꿍과의 만남을 통해 단순히 전공 지식만이 아닌, <span class="highlight-word">다양한 관점에서 세상을 바라보는 방법</span>을 배울 수 있었습니다. 앞으로도 승혁님과 함께 전공 공부는 물론, 다양한 경험을 통해 서로 성장해 나갈 수 있기를 기대합니다. 같은 학과 친구이자 이제는 좋은 동료가 된 그와의 만남은 대학 생활에서 가장 의미 있는 인연 중 하나가 될 것 같습니다.</p>
+                        </div>
+                        <div class="intro-image">
+                            <img src="interview.png" alt="인터뷰 사진">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="partner-content" id="partner-tab2-content">
+                    <ul class="qa-list">
+                        <li style="--i: 1">
+                            <strong>Q1: 간단하게 자기소개를 해주세요.</strong>
+                            <p>A: 저는 컴퓨터공학부 22학번 2학년 이승혁입니다! 열심히 공부하면서 개발자로서의 꿈을 키워나가고 있어요.</p>
+                        </li>
+                        <li style="--i: 2">
+                            <strong>Q2: 본인을 한 단어로 표현한다면 무엇인가요?</strong>
+                            <p>A: ‘코딩’이라고 표현할 수 있을 것 같아요. 항상 코드를 짜면서 “이게 어떻게 작동하지?”라는 의문과 흥미를 동시에 느껴요.</p>
+                        </li>
+                        <li style="--i: 3">
+                            <strong>Q3: 나를 가장 잘 나타내는 이모지 3개는 무엇인가요?</strong>
+                            <p>A: 🫣, 🥺, ☺️</p>
+                        </li>
+                        <li style="--i: 4">
+                            <strong>Q4: 자주 듣는 오해나 첫인상은 어떤가요?</strong>
+                            <p>A: 많은 분들이 저를 처음 보면 모범생 같다고 말씀하세요. 조용하고 차분한 인상 때문인 것 같아요.</p>
+                        </li>
+                        <li style="--i: 5">
+                            <strong>Q5: 나를 동물로 비유한다면 어떤 동물일까요?</strong>
+                            <p>A: 곰이요! 요즘에는 특히 겨울잠 자듯 집에 콕 박혀서 혼자 시간을 보내는 걸 좋아해서요. 예전에는 다른 동물이었지만 요즘엔 곰이 딱이에요.</p>
+                        </li>
+                        <li style="--i: 6">
+                            <strong>Q6: 최근에 빠진 소확행이 있다면 무엇인가요?</strong>
+                            <p>A: 요즘엔 넷플릭스 보면서 혼자만의 시간을 보내는 게 큰 행복이에요. 편하게 누워서 콘텐츠 보는 그 시간이 참 소중해요.</p>
+                        </li>
+                        <li style="--i: 7">
+                            <strong>Q7: 건국대학교 근처에서 좋아하는 장소는 어디인가요?</strong>
+                            <p>A: 일감호 옆 도서관 뒷문으로 올라가는 길이요. 풍경도 좋고, 조용해서 산책하기 좋아요.</p>
+                        </li>
+                        <li style="--i: 8">
+                            <strong>Q8: 꼭 여행 가보고 싶은 나라나 도시는 어디인가요?</strong>
+                            <p>A: 북유럽, 특히 핀란드에 가보고 싶어요. 따뜻한 커피 한 잔 손에 들고, 차분한 풍경을 바라보며 여유로운 시간을 보내고 싶어요.</p>
+                        </li>
+                        <li style="--i: 9">
+                            <strong>Q9: 인생 영화, 드라마, 혹은 책을 추천해준다면요?</strong>
+                            <p>A: 『날씨가 좋으면 찾아가겠어요』라는 소설을 추천해요. 감성적이고 잔잔한 이야기가 마음 깊이 남는 작품이에요.</p>
+                        </li>
+                        <li style="--i: 10">
+                            <strong>Q10: 본인만의 스트레스 해소법은 무엇인가요?</strong>
+                            <p>A: 저는 그냥 ‘냅다 자기’예요. 혼자만의 시간을 갖고 푹 자는 게 스트레스를 날려주는 최고의 방법인 것 같아요.</p>
+                        </li>
+                        <li style="--i: 11">
+                            <strong>Q11: 버킷리스트 중 하나를 꼽는다면 무엇인가요?</strong>
+                            <p>A: 한 달 동안 즉흥적으로 여행을 떠나보고 싶어요. 계획 없이 자유롭게 떠돌며 나만의 시간을 보내고 싶어요.</p>
+                        </li>
+                        <li style="--i: 12">
+                            <strong>Q12: 좋아하는 인생 문장이나 좌우명이 있다면요?</strong>
+                            <p>A: “남들 다 똑같이 산다.” 이 말이 저에게는 묘하게 위로가 돼요. 결국엔 나도 잘 살아갈 수 있겠다는 희망이 느껴져요.</p>
+                        </li>
+                        <li style="--i: 13">
+                            <strong>Q13: 어릴 때 생각한 어른의 모습과 지금의 나는 어떤가요?</strong>
+                            <p>A: 예전엔 대학생만 봐도 정말 어른 같았는데, 막상 제가 되어보니 아직도 어린아이 같은 면이 많더라고요. 20대도 아직 한참 배우는 중인 것 같아요.</p>
+                        </li>
+                        <li style="--i: 14">
+                            <strong>Q14: 나만의 행복 공식이 있다면 무엇인가요?</strong>
+                            <p>A: 행복 = 돈 × (건강 + 인연 - 돈) + 시간.<br>적당한 돈, 건강한 몸, 좋은 사람들과의 관계, 그리고 여유 있는 시간이 행복을 만든다고 생각해요.</p>
+                        </li>
+                        <li style="--i: 15">
+                            <strong>Q15: 꿈꾸는 직업이나 해보고 싶은 일은 무엇인가요?</strong>
+                            <p>현재는 백엔드 개발자가 되고 싶지만, 다양한 분야를 경험해보면서 진로를 구체화해 나가고 싶어요.</p>
+                        </li>
+                        <li style="--i: 16">
+                            <strong>Q16: 100억 원이 생긴다면 제일 먼저 무엇을 할 건가요?</strong>
+                            <p>부모님 앞에서 머니건으로 돈을 뿌려드릴 거예요! “이걸 언제 다 치우냐…” 하시면서도 분명히 웃으실 것 같아요. 그 모습까지 상상돼요ㅎㅎ</p>
+                        </li>
+                        <li style="--i: 17">
+                            <strong>Q17: 만약 내 인생을 영화로 만든다면 제목은 무엇일까요?</strong>
+                            <p>『느루 떠나는 가온길』이라고 지을 거예요. ‘느루’는 천천히, 오래도록이라는 뜻이고, ‘가온길’은 정직하고 바른 길을 의미해요. 저의 삶의 태도를 담은 제목이에요.</p>
+                        </li>
+                        <li style="--i: 18">
+                            <strong>Q18: 과거로 돌아갈 수 있다면 어느 시점으로 가고 싶나요?</strong>
+                            <p>고등학교 1학년 시절이요. 그때는 정말 하고 싶은 걸 마음껏 했던 시기라, 다시 그 자유로움을 느껴보고 싶어요.</p>
+                        </li>
+                        <li style="--i: 19">
+                            <strong>Q19: 외계인에게 보여주고 싶은 것이 있다면 무엇인가요?</strong>
+                            <p>우리 집이요! 외계인도 초대해서 이런저런 이야기하며 친해지고 싶어요. 지구의 따뜻함을 보여주고 싶기도 하고요.</p>
+                        </li>
+                        <li style="--i: 20">
+                            <strong>Q20: 경험해보고 싶은 다른 학과가 있다면 무엇인가요?</strong>
+                            <p>수학과요! 전공 박람회에서 수학과의 매력을 느끼고 한눈에 반했어요. 수학의 깊이 있는 사고가 멋지다고 생각해요.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="seoul-forest">
+            <h2>서울숲 소개</h2>
+            <div class="seoul-forest">
+                <div class="forest-info">
+                    <p style="--i: 1">서울숲은 서울특별시 성동구 성수동에 자리한 <span class="highlight-word">도시 속 작은 휴식처</span>로, 2005년 6월 18일에 문을 열었어요. 상상해보세요, 여의도 공원의 4.5배에 달하는 약 1,156,498㎡(35만평)의 넓은 초록 공간이 도심 한가운데 펼쳐져 있다니! 서울의 한복판에서 이렇게 넓은 자연을 만날 수 있다는 것이 처음엔 저도 놀랐습니다.</p>
+                    <p style="--i: 2">예전에는 뚝섬경마장, 골프연습장, 체육공원이 있던 이곳이 <span class="highlight-word">시민들의 쉼터</span>로 다시 태어났어요. 콘크리트와 아스팔트로 뒤덮인 도시에서 잠시 벗어나 자연과 함께 호흡할 수 있는 곳, 그게 바로 서울숲의 가장 큰 매력이 아닐까 싶어요.</p>
+                    <p style="--i: 3">제가 서울숲을 특별히 선택한 이유는 <span class="highlight-word">사계절마다 다른 얼굴</span>을 보여주기 때문이에요. 봄에는 분홍빛 벚꽃이 흩날리는 길을 걸으며 로맨틱한 감성에 빠질 수 있고, 여름에는 울창한 나무 그늘 아래 더위를 피할 수 있죠. 가을에는 노랗고 빨간 단풍이 물들어 가을의 정취를 한껏 느낄 수 있고, 겨울에는 하얀 눈이 내린 고요한 숲의 모습도 만날 수 있어요. 특히 저는 친구와 함께 벚꽃이 만개한 4월의 서울숲을 걷다가 그 아름다움에 완전히 반해버렸답니다!</p>
+                    <p style="--i: 4">그리고 서울숲은 그저 산책만 하는 공간이 아니라 <span class="highlight-word">문화와 예술, 생태가 어우러진 살아있는 공간</span>이라는 점도 매력적이었어요. 주말마다 열리는 다양한 플리마켓과 문화 행사, 생태 학습 프로그램에 참여할 수 있고, 귀여운 사슴들도 만날 수 있답니다. 학교 과제로 시작한 방문이었지만, 어느새 저에게는 스트레스를 풀고 영감을 얻는 특별한 장소가 되었어요. 이 글을 읽고 있는 모든분들도 한번 방문해보시면 그 매력에 푹 빠지게 될 거예요!</p>
+                </div>
+                <div class="forest-image">
+                    <img src="seoulforest.jpg" alt="서울숲 전경">
+                </div>
+            </div>
+
+            <div class="forest-gallery">
+                <div class="gallery-item">
+                    <img src="seoulforest_spring.png" alt="서울숲 봄 풍경">
+                    <p>봄에 만개한 벚꽃길</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="seoulforest_fall.png" alt="서울숲 가을 풍경">
+                    <p>가을의 서울숲 단풍길</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="습지생태원.png" alt="서울숲 습지생태원">
+                    <p>다양한 생물이 서식하는 습지생태원</p>
+                </div>
+            </div>
+
+            <div class="forest-tabs">
+                <input type="radio" name="forest-tabs" id="tab1" checked>
+                <label for="tab1" style="--i: 1">거울연못</label>
+                <input type="radio" name="forest-tabs" id="tab2">
+                <label for="tab2" style="--i: 2">별빛정원</label>
+                <input type="radio" name="forest-tabs" id="tab3">
+                <label for="tab3" style="--i: 3">뚝섬문화예술공원</label>
+            
+                <div class="forest-content" id="tab1-content">
+                    <h3>거울연못</h3>
+                    <div class="tab-flex">
+                        <div class="tab-text">
+                            <p>서울숲의 중심부에 위치한 거울연못은 맑은 물에 주변 경관이 비치는 <span class="highlight-word">마법 같은 공간</span>입니다. 이름 그대로 하늘과 주변 나무들이 물 위에 완벽하게 반사되어 마치 또 다른 세계로 들어가는 문처럼 느껴집니다. 사계절 내내 다른 모습을 보여주며, 특히 봄에는 벚꽃이 연못에 비치는 모습이 환상적입니다.</p>
+                            <p>연못 주변으로는 잘 정비된 산책로가 있어 여유롭게 걸으며 힐링할 수 있으며, 중간중간 설치된 벤치에 앉아 고요한 수면을 바라보는 것만으로도 일상의 스트레스가 씻겨 내려가는 듯한 느낌을 받을 수 있습니다. 연못 가장자리에 피어있는 수생식물들과 때때로 찾아오는 오리 가족들의 모습은 도심 속에서 만나는 작은 생태계의 아름다움을 선사합니다.</p>
+                            <p>특히 <span class="highlight-word">이른 아침이나 해질녘</span>에 방문하면 물 위에 반사되는 황금빛 햇살과 그림자의 조화가 더욱 아름답습니다. 야간에는 은은한 조명이 물에 반사되어 낮과는 또 다른 몽환적인 분위기를 연출하며, 연인들이 소원을 빌거나 사진을 찍기 위해 자주 찾는 인기 장소이기도 합니다. 계절마다, 시간대마다 다른 모습을 보여주는 거울연못은 한 번의 방문으로는 그 매력을 다 느끼기 어려운 곳입니다.</p>
+                        </div>
+                        <div class="tab-image">
+                            <img src="거울연못.png" alt="서울숲 거울연못">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="forest-content" id="tab2-content">
+                    <h3>별빛정원</h3>
+                    <div class="tab-flex">
+                        <div class="tab-text">
+                            <p>별빛정원은 서울숲에서 가장 <span class="highlight-word">로맨틱한 공간</span>으로, 이름 그대로 밤하늘의 별을 닮은 조명들이 정원 곳곳에 설치되어 있습니다. 해가 저물면 은은한 조명이 켜지며 마치 별이 내려앉은 듯한 환상적인 분위기를 연출합니다. 낮과 밤의 모습이 완전히 달라 마치 두 개의 다른 정원을 방문하는 느낌을 줍니다.</p>
+                            <p>이곳에는 계절마다 다양한 <span class="highlight-word">테마 정원</span>이 조성됩니다. 봄에는 화사한 튤립과 수선화가 가득한 봄의 정원, 여름에는 시원한 분수와 함께 다채로운 초화류가 만발하는 여름 정원, 가을에는 코스모스와 억새가 바람에 흔들리는 가을 정원, 겨울에는 상록수와 조명이 어우러진 겨울 정원으로 변신합니다. 산책로를 따라 걸으며 잠깐 동화 속 세계에 들어온 듯한 기분을 느낄 수 있습니다.</p>
+                            <p>특히 봄과 여름에는 <span class="highlight-word">다양한 나비와 벌들이 찾아와</span> 생태 관찰의 즐거움도 더해집니다. 곳곳에 설치된 벤치에 앉아 꽃향기를 맡으며 휴식을 취할 수 있고, 소규모 음악회나 문화 행사가 열리기도 합니다. 데이트 코스로 인기가 많은 이유는 풍성한 꽃과 어우러진 조명이 만드는 로맨틱한 분위기 때문인데, 많은 커플들이 이곳에서 기념사진을 찍고 추억을 만들어갑니다. 조용히 걷거나 앉아서 생각을 정리하기 좋은 명상의 공간이기도 합니다.</p>
+                        </div>
+                        <div class="tab-image">
+                            <img src="별빛정원.jpg" alt="서울숲 별빛정원">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="forest-content" id="tab3-content">
+                    <h3>뚝섬문화예술공원</h3>
+                    <div class="tab-flex">
+                        <div class="tab-text">
+                            <p>뚝섬문화예술공원은 서울숲과 연결된 <span class="highlight-word">활기 넘치는 문화예술 공간</span>으로, 과거 뚝섬의 역사적 흔적과 현대적 문화예술이 공존하는 곳입니다. 넓은 잔디광장과 야외무대가 중심에 자리 잡고 있어 다양한 이벤트와 공연을 즐길 수 있으며, 한강과 인접해 있어 강변의 탁 트인 경치까지 함께 감상할 수 있는 매력적인 공간입니다.</p>
+                            <p>주말이면 <span class="highlight-word">다양한 문화 행사와 프리마켓</span>이 열립니다. 지역 예술가들의 작품을 직접 구매할 수 있는 아트마켓부터, 수공예품과 친환경 제품을 만나볼 수 있는 플리마켓, 그리고 계절별 테마가 있는 다양한 식음료 트럭까지 즐비합니다. 특히 봄과 가을에는 야외 음악회와 영화제가 열려 피크닉 매트를 깔고 문화생활을 즐기는 시민들로 가득 차곤 합니다.</p>
+                            <p>공원 곳곳에는 <span class="highlight-word">독특한 예술 설치물</span>들이 배치되어 있어 산책하는 동안 우연히 발견하는 재미도 있습니다. 재활용 재료를 활용한 환경친화적 작품부터, 인터랙티브한 현대 미술 작품까지 다양한 예술 세계를 만날 수 있습니다. 또한 정기적으로 열리는 생태 예술 워크숍에 참여하면 자연과 예술을 접목한 창작 활동을 직접 체험할 수도 있습니다.</p>
+                            <p>한강변을 따라 이어진 자전거 도로는 라이더들에게 인기가 많으며, 공원 내 대여소에서 자전거나 인라인스케이트를 빌려 즐길 수 있습니다. 저녁이면 한강의 황홀한 석양을 배경으로 산책을 즐기는 사람들로 북적이며, 밤이 되면 한강의 야경과 함께 도시의 또 다른 낭만을 느낄 수 있습니다. 도심 속에서 자연, 문화, 예술, 그리고 활기 넘치는 소통이 한데 어우러진 이곳은 언제 방문해도 새로운 경험을 선사합니다.</p>
+                        </div>
+                        <div class="tab-image">
+                            <img src="뚝섬문화예술공원.jpg" alt="뚝섬문화예술공원">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="visit-info">
+            <h2>이렇게 다녀오세요</h2>
+            <div class="visit-tabs">
+                <input type="radio" name="visit-tabs" id="visit-tab1" checked>
+                <label for="visit-tab1" style="--i: 1">준비물 & 복장</label>
+                
+                <input type="radio" name="visit-tabs" id="visit-tab2">
+                <label for="visit-tab2" style="--i: 2">추천 방문 시간</label>
+                
+                <input type="radio" name="visit-tabs" id="visit-tab3">
+                <label for="visit-tab3" style="--i: 3">산책 경로</label>
+                
+                <input type="radio" name="visit-tabs" id="visit-tab4">
+                <label for="visit-tab4" style="--i: 4">대중 교통 정보</label>
+                
+                <input type="radio" name="visit-tabs" id="visit-tab5">
+                <label for="visit-tab5" style="--i: 5">주의 사항</label>
+                
+                <input type="radio" name="visit-tabs" id="visit-tab6">
+                <label for="visit-tab6" style="--i: 6">느낀 점</label>
+                
+                <div class="visit-content" id="visit-tab1-content">
+                    <h3>준비물 & 복장</h3>
+                    <div class="info-text">
+                        <p>서울숲을 더 알차게 즐기기 위한 <span class="highlight-word">준비물과 복장</span>을 안내해 드립니다.</p>
+                        <ul class="info-list">
+                            <li><span class="info-highlight">편안한 신발</span>: 서울숲은 생각보다 넓기 때문에 걷기 편한 운동화나 가벼운 트레킹화가 좋습니다. 평균적으로 2-3시간 정도 걷게 되므로 발이 편안한 신발을 선택하세요.</li>
+                            <li><span class="info-highlight">계절별 복장</span>:
+                                <ul class="sub-list">
+                                    <li>봄: 가볍고 통풍이 잘 되는 옷과 얇은 겉옷 (일교차가 클 수 있어요)</li>
+                                    <li>여름: 햇빛 차단을 위한 모자, 선글라스, 자외선 차단제 필수</li>
+                                    <li>가을: 얇은 니트나 가디건 (아침저녁으로 쌀쌀할 수 있어요)</li>
+                                    <li>겨울: 방한용 코트, 목도리, 장갑 (바람이 강할 수 있어요)</li>
+                                </ul>
+                            </li>
+                            <li><span class="info-highlight">필수 소지품</span>: 
+                                <ul class="sub-list">
+                                    <li>물: 충분한 양의 물을 준비하세요. 공원 내 음수대가 있지만 거리가 있을 수 있어요.</li>
+                                    <li>간식: 에너지 보충을 위한 가벼운 간식</li>
+                                    <li>휴대폰 충전기: 사진과 영상을 많이 찍다 보면 배터리가 빨리 소모됩니다.</li>
+                                    <li>손수건: 땀을 닦거나 벤치에 앉을 때 유용합니다.</li>
+                                </ul>
+                            </li>
+                            <li><span class="info-highlight">선택 준비물</span>:
+                                <ul class="sub-list">
+                                    <li>피크닉 매트: 잔디밭에서 휴식을 취하고 싶다면 준비해 가세요.</li>
+                                    <li>카메라: 스마트폰 외에 추가적인 사진 촬영 장비!</li>
+                                    <li>스케치북/필기구: 예쁜 풍경을 스케치하거나 기록하고 싶다면!</li>
+                                    <li>모기 퇴치제: 여름철에 특히 필요합니다.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="visit-content" id="visit-tab2-content">
+                    <h3>추천 방문 시간</h3>
+                    <div class="info-text">
+                        <p>서울숲의 <span class="highlight-word">계절별 아름다움</span>을 가장 잘 느낄 수 있는 시간을 알려드립니다.</p>
+                        <ul class="info-list">
+                            <li><span class="info-highlight">봄 (3-5월)</span>: 
+                                <ul class="sub-list">
+                                    <li>벚꽃 시즌(4월 초~중순): 오전 10시~오후 3시 사이가 인파가 적당합니다.</li>
+                                    <li>사진 촬영 황금시간: 오전 8시~9시 사이(아침 햇살에 비치는 벚꽃 터널)</li>
+                                    <li>주말보다는 평일 방문이 여유롭게 즐길 수 있습니다.</li>
+                                </ul>
+                            </li>
+                            <li><span class="info-highlight">여름 (6-8월)</span>: 
+                                <ul class="sub-list">
+                                    <li>더위를 피하려면 오전 9시 이전 또는 오후 5시 이후 방문하세요.</li>
+                                    <li>분수가 작동하는 시간(오전 10시~오후 6시)에 맞춰 방문하면 더위를 식힐 수 있어요.</li>
+                                    <li>장마철에는 방문 전 날씨를 확인하세요.</li>
+                                </ul>
+                            </li>
+                            <li><span class="info-highlight">가을 (9-11월)</span>: 
+                                <ul class="sub-list">
+                                    <li>단풍 시즌(10월 중순~11월 초): 오후 2시~5시 사이가 가장 아름다워요.</li>
+                                    <li>가을 축제가 열리는 시기에 맞춰 방문하면 더 많은 프로그램을 즐길 수 있습니다.</li>
+                                    <li>늦가을(11월 중순)의 낙엽이 쌓인 산책로도 특별한 경험입니다.</li>
+                                </ul>
+                            </li>
+                            <li><span class="info-highlight">겨울 (12-2월)</span>: 
+                                <ul class="sub-list">
+                                    <li>눈 내린 다음 날 방문하면 환상적인 설경을 감상할 수 있어요.</li>
+                                    <li>오후 1시~3시 사이가 가장 따뜻하고 사진 찍기 좋습니다.</li>
+                                    <li>겨울철 특별 조명이 켜지는 오후 5시~8시에 방문해도 좋아요.</li>
+                                </ul>
+                            </li>
+                            <li><span class="info-highlight">공통 팁</span>: 
+                                <ul class="sub-list">
+                                    <li>서울숲은 365일 24시간 개방되어 있지만, 가능하면 해가 있는 시간에 방문하세요.</li>
+                                    <li>식당과 카페는 주로 오전 9시부터 오후 8시까지 운영됩니다.</li>
+                                    <li>대중교통 시간을 고려해서 방문 계획을 세우세요.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="visit-content" id="visit-tab3-content">
+                    <h3>산책 경로</h3>
+                    <div class="info-text">
+                        <p>서울숲을 <span class="highlight-word">효율적으로 둘러볼 수 있는</span> 추천 코스를 소개합니다.</p>
+                        <ul class="info-list">
+                            <li><span class="info-highlight">초보자 코스 (1시간)</span>: 
+                                <ul class="sub-list">
+                                    <li>서울숲공원 입구 → 거울연못 → 바람의 언덕 → 꽃사슴 방사장 → 커뮤니티 정원 → 출구</li>
+                                    <li>서울숲의 핵심 명소만 둘러보는 짧은 코스입니다.</li>
+                                </ul>
+                            </li>
+                            <li><span class="info-highlight">일반 코스 (2시간)</span>: 
+                                <ul class="sub-list">
+                                    <li>서울숲공원 입구 → 거울연못 → 습지생태원 → 꽃사슴 방사장 → 바람의 언덕 → 별빛정원 → 출구</li>
+                                    <li>서울숲의 주요 명소를 두루 체험할 수 있는 코스입니다.</li>
+                                </ul>
+                            </li>
+                            <li><span class="info-highlight">심화 코스 (3시간 이상)</span>: 
+                                <ul class="sub-list">
+                                    <li>서울숲공원 입구 → 거울연못 → 습지생태원 → 버드나무 군락지 → 꽃사슴 방사장 → 바람의 언덕 → 별빛정원 → 뚝섬문화예술공원 → 한강변 산책로 → 출구</li>
+                                    <li>서울숲의 모든 것을 경험할 수 있는 전체 코스입니다.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p><span class="info-highlight">추천 포토 스팟</span>: 벚꽃길, 거울연못, 대형 그네, 바람의 언덕, 버드나무 군락지</p>
+                    </div>
+                    <div class="route-images">
+                        <div class="route-image-item">
+                            <img src="map.png" alt="서울숲 산책 경로 지도">
+                            <p>실제 산책 경로 지도</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="visit-content" id="visit-tab4-content">
+                    <h3>대중 교통 정보</h3>
+                    <div class="info-text">
+                        <p><span class="highlight-word">다양한 방법</span>으로 서울숲에 방문할 수 있습니다.</p>
+                        <ul class="info-list">
+                            <li><span class="info-highlight">지하철</span>: 
+                                <ul class="sub-list">
+                                    <li>분당선 서울숲역 (3번 출구): 도보로 약 5분 거리</li>
+                                    <li>2호선 뚝섬역 (8번 출구): 도보로 약 10분 거리</li>
+                                    <li>경의중앙선 응봉역 (1번 출구): 도보로 약 15분 거리</li>
+                                </ul>
+                            </li>
+                            <li><span class="info-highlight">버스</span>: 
+                                <ul class="sub-list">
+                                    <li>간선버스: 121, 141, 145, 148, 463, 2413, 2014, 2224, 2413</li>
+                                    <li>지선버스: 2012, 2013, 2224, 2413</li>
+                                    <li>정류장: '서울숲, 서울숲공원, 서울숲남문' 정류장에서 하차</li>
+                                </ul>
+                            </li>
+                            <li><span class="info-highlight">자가용</span>: 
+                                <ul class="sub-list">
+                                    <li>주소: 서울특별시 성동구 뚝섬로 273</li>
+                                    <li>주차 공간: 총 230대 주차 가능</li>
+                                    <li>주차 요금: 최초 30분 1,000원, 추가 10분당 200원 (일일 최대 15,000원)</li>
+                                    <li>주차장 운영 시간: 06:00~22:00</li>
+                                </ul>
+                            </li>
+                            <li><span class="info-highlight">자전거</span>: 
+                                <ul class="sub-list">
+                                    <li>한강 자전거 도로와 연결되어 있어 자전거로 방문하기 좋습니다.</li>
+                                    <li>서울숲 내 자전거 보관소가 여러 곳에 있습니다.</li>
+                                    <li>따릉이 대여소: 서울숲 주변에 여러 개의 따릉이 스테이션이 있습니다.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p><span class="info-highlight">내부 이동 수단</span>: 서울숲 내에서는 도보로만 이동 가능합니다. 자전거, 킥보드 등은 지정된 도로에서만 이용 가능합니다.</p>
+                    </div>
+                </div>
+                
+                <div class="visit-content" id="visit-tab5-content">
+                    <h3>주의 사항</h3>
+                    <div class="info-text">
+                        <p>서울숲을 방문할 때 <span class="highlight-word">알아두면 좋은</span> 주의사항입니다.</p>
+                        <ul class="info-list">
+                            <li><span class="info-highlight">자연 보호</span>: 
+                                <ul class="sub-list">
+                                    <li>식물이나 꽃을 훼손하지 마세요.</li>
+                                    <li>야생동물에게 음식을 주지 마세요.</li>
+                                    <li>지정된 산책로만 이용해주세요.</li>
+                                </ul>
+                            </li>
+                            <li><span class="info-highlight">안전 사항</span>: 
+                                <ul class="sub-list">
+                                    <li>우천 시 미끄러질 수 있으니 주의하세요.</li>
+                                    <li>해질녘 이후에는 일부 조명이 적은 구역이 있습니다.</li>
+                                    <li>미아 발생 시 안내센터(02-460-2905)로 연락하세요.</li>
+                                </ul>
+                            </li>
+                            <li><span class="info-highlight">시설 이용</span>: 
+                                <ul class="sub-list">
+                                    <li>화장실: 주요 구역마다 위치해 있습니다.</li>
+                                    <li>음식물: 지정된 피크닉 구역에서만 식사가 가능합니다.</li>
+                                    <li>쓰레기: 분리수거에 협조해주세요.</li>
+                                </ul>
+                            </li>
+                            <li><span class="info-highlight">특별 주의사항</span>: 
+                                <ul class="sub-list">
+                                    <li>애완동물은 지정된 구역에서만 출입이 가능합니다.</li>
+                                    <li>드론 비행은 허가가 필요합니다.</li>
+                                    <li>단체 방문 시 사전 예약이 필요할 수 있습니다.</li>
+                                    <li>행사나 촬영은 사전 허가가 필요합니다.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="warning-box">
+                            <p><strong>긴급 연락처</strong></p>
+                            <p>서울숲 안내센터: 02-460-2905 (09:00~18:00)</p>
+                            <p>응급상황: 119</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="visit-content" id="visit-tab6-content">
+                    <h3>느낀 점</h3>
+                    <div class="feeling-content">
+                        <p>서울숲을 다녀온 후 <span class="highlight-word">제가 느낀 점</span>을 공유합니다.</p>
+                        <p>처음 서울숲을 방문했을 때는 단순히 학교 과제를 위한 방문이었습니다. 하지만 막상 그 넓은 공간을 걸으며 <span class="highlight-word">도심 속 자연</span>의 아름다움을 경험하면서, 이곳이 얼마나 소중한 공간인지 느낄 수 있었습니다. 특히 바쁜 일상 속에서 잠시나마 자연과 교감하며 마음의 여유를 찾았던 경험이 가장 기억에 남습니다.</p>
+                        <p>서울숲이 특별하게 느껴졌던 이유는 단순한 공원이 아닌, <span class="highlight-word">사람과 자연이 공존하는 생태계</span>를 직접 체험할 수 있었기 때문입니다. 습지생태원에서 만난 다양한 생물들, 거울연못에 비친 하늘과 나무들의 모습까지... 모든 순간이 도시 생활에 지친 마음을 치유해주는 느낌이었습니다.</p>
+                        <p>또한 서울숲을 걸으며 발견한 계절마다 다른 모습은 <span class="highlight-word">시간의 흐름과 자연의 순환</span>을 느끼게 해주었습니다. 봄에는 벚꽃이 흩날리는 산책로를 걸었고, 여름에는 울창한 나무 그늘 아래서 더위를 피했으며, 가을에는 알록달록 물든 단풍을 감상했습니다. 같은 공간이지만 계절마다 다른 얼굴을 보여주는 서울숲은 언제 방문해도 새로운 매력을 발견할 수 있는 곳이었습니다.</p>
+                        <p>이번 방문을 통해 <span class="highlight-word">일상 속 작은 여유</span>가 얼마나 중요한지 다시 한번 깨달았습니다. 컴퓨터 앞에 앉아 코딩만 하던 제게, 서울숲은 자연과 함께 호흡하며 창의적인 영감을 얻을 수 있는 특별한 공간이 되었습니다. 앞으로도 틈틈이 시간을 내어 서울숲을 찾아, 바쁜 일상 속에서 잠시나마 자연과 함께하는 시간을 가질 계획입니다.</p>
+                        <p>마지막으로, 서울숲을 함께 걸으며 짝꿍과 나눈 대화와 경험은 <span class="highlight-word">소중한 추억</span>이 되었습니다. 같은 전공의 친구와 자연 속에서 나눈 대화들은 학교나 강의실에서는 느낄 수 없었던 새로운 통찰을 주었고, 이를 통해 서로에 대해 더 깊게 알아갈 수 있었습니다. 서울숲은 단순한 방문지를 넘어, 인간관계와 자아 성찰의 기회를 제공하는 특별한 장소였습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025년 봄, 서울의 길을 걷다! 프로젝트</p>
+        <p>작성자: 이지현 | 학과: 컴퓨터공학부 | 학번: 202214314</p>
+    </footer>
+</body>
+</html>
