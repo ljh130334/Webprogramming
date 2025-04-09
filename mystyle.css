@@ -1,3 +1,19 @@
+/* 공통 변수 */
+:root {
+    --primary-color: #FF5C8D;
+    --secondary-color: #FF8FB1;
+    --light-pink: #FFD7E9;
+    --lightest-pink: #FFF0F5;
+    --background-color: #FFF9F9;
+    --text-color: #333;
+    --text-secondary: #666;
+    --shadow-sm: 0 2px 5px rgba(0,0,0,0.1);
+    --shadow-md: 0 5px 15px rgba(0,0,0,0.05);
+    --shadow-lg: 0 5px 15px rgba(0,0,0,0.1);
+    --border-radius: 10px;
+    --transition-normal: all 0.3s ease;
+}
+
 /* 기본 리셋 및 전역 스타일 */
 * {
     margin: 0;
@@ -13,8 +29,8 @@ html, body {
 
 body {
     font-family: "42dot Sans", sans-serif;
-    background-color: #FFF9F9;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -23,7 +39,7 @@ body {
 
 /* 헤더 스타일 */
 header {
-    background: linear-gradient(to bottom, #FFD7E9, #FFF9F9);
+    background: linear-gradient(to bottom, var(--light-pink), var(--background-color));
     text-align: center;
     padding: 20px 0;
     position: fixed;
@@ -32,29 +48,20 @@ header {
     z-index: 100;
 }
 
-header h1 {
+h1, h2 {
     font-family: "Bagel Fat One", system-ui;
     font-weight: 400;
     font-style: normal;
-    color: #FF5C8D;
+    color: var(--primary-color);
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 header p {
-    color: #666;
+    color: var(--text-secondary);
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-h2 {
-    font-family: "Bagel Fat One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    color: #FF5C8D;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 /* 벚꽃 잎 애니메이션 효과 */
@@ -62,8 +69,8 @@ h2 {
     position: absolute;
     width: 15px;
     height: 15px;
-    background-color: #FFD7E9;
-    border-radius: 15px 0px;
+    background-color: var(--light-pink);
+    border-radius: 15px 0;
     opacity: 0.7;
     animation: falling 10s infinite linear;
 }
@@ -100,20 +107,20 @@ h2 {
 
 @keyframes falling {
     0% {
-        top: -10px;
-        transform: rotate(0deg);
+    top: -10px;
+    transform: rotate(0deg);
     }
     100% {
-        top: 100%;
-        transform: rotate(360deg);
+    top: 100%;
+    transform: rotate(360deg);
     }
 }
 
 /* 네비게이션 스타일 */
 nav {
-    background-color: #FF8FB1;
+    background-color: var(--secondary-color);
     padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-sm);
     position: fixed;
     top: 152px;
     width: 100%;
@@ -137,13 +144,13 @@ nav ul li label {
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 20px;
-    transition: background-color 0.3s;
+    transition: var(--transition-normal);
     cursor: pointer;
     display: inline-block;
 }
 
 nav ul li label:hover {
-    background-color: #FF5C8D;
+    background-color: var(--primary-color);
 }
 
 /* 메인 콘텐츠 스타일 */
@@ -159,10 +166,10 @@ main {
 section {
     width: 80%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     padding: 30px;
     margin: 20px auto 60px auto;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: var(--shadow-md);
     position: relative;
     display: none;
     transition: transform 0.3s ease;
@@ -170,6 +177,49 @@ section {
 
 section:hover {
     transform: translateY(-5px);
+}
+
+/* 공통 애니메이션 효과 */
+@keyframes fadeInText {
+    from {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+@keyframes fadeInImage {
+    from {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    transform: translateY(10px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.fade-in-text {
+    animation: fadeInText 1.5s forwards;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
 }
 
 /* 공통 섹션 애니메이션 */
@@ -187,154 +237,87 @@ section h2::after {
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to right, #FF5C8D, transparent);
-}
-
-/* 공통 애니메이션 효과 */
-@keyframes fadeInText {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInImage {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fade-in-text {
-    animation: fadeInText 1.5s forwards;
-}
-
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1.5s forwards;
+    background: linear-gradient(to right, var(--primary-color), transparent);
 }
 
 /* 특별 강조 단어 스타일 */
 .highlight-word {
-    background: linear-gradient(transparent 60%, #FFD7E9 40%);
+    background: linear-gradient(transparent 60%, var(--light-pink) 40%);
     padding: 0 2px;
 }
 
 .highlight {
-    background-color: #FFF0F5;
+    background-color: var(--lightest-pink);
     padding: 10px;
-    border-left: 3px solid #FF5C8D;
+    border-left: 3px solid var(--primary-color);
     margin: 15px 0;
 }
 
-/* 'ME' 소개 섹션 스타일 */
-.intro {
+/* 공통 소개 섹션 스타일 (intro, partner, seoul-forest) */
+.intro, .partner, .seoul-forest {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     align-items: flex-start;
 }
 
-.intro-text {
+.intro-text, .partner-info, .forest-info {
     flex: 1;
     min-width: 300px;
 }
 
-.intro-text p {
+.intro-text p, .partner-info p, .forest-info p {
     line-height: 1.8;
     margin-bottom: 18px;
     font-size: 1.05rem;
+    animation: fadeInText 1.5s forwards;
 }
 
-.intro-text p:first-child {
+.intro-text p:first-child, .partner-info p:first-child {
     font-weight: 600;
     font-size: 1.15rem;
-    color: #FF5C8D;
+    color: var(--primary-color);
 }
 
-.intro-image {
+/* 공통 이미지 스타일 */
+.intro-image, .forest-image, .tab-image {
     flex: 1;
     min-width: 300px;
     max-width: 500px;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-lg);
     position: relative;
     transition: transform 0.3s ease;
     animation: fadeInImage 1.5s forwards;
     opacity: 0;
 }
 
-.intro-image::before {
+.intro-image::before, .tab-image::before {
     content: "";
     position: absolute;
     top: -10px;
     left: -10px;
     width: 100%;
     height: 100%;
-    border: 2px dashed #FF8FB1;
-    border-radius: 10px;
+    border: 2px dashed var(--secondary-color);
+    border-radius: var(--border-radius);
     z-index: -1;
 }
 
-.intro-image:hover {
+.intro-image:hover, .forest-image:hover, .tab-image:hover {
     transform: scale(1.02);
 }
 
-.intro-image img {
+.intro-image img, .forest-image img, .tab-image img {
     width: 100%;
     height: auto;
     display: block;
     transition: opacity 0.3s ease;
 }
 
-.intro-image img:hover {
+.intro-image img:hover, .forest-image img:hover {
     opacity: 0.8;
-}
-
-/* 짝꿍 섹션 스타일 */
-.partner {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: flex-start;
-}
-
-.partner-info {
-    flex: 1;
-    min-width: 300px;
-}
-
-.partner-info p {
-    line-height: 1.8;
-    margin-bottom: 18px;
-    font-size: 1.05rem;
-    animation: fadeInText 1.5s forwards;
-}
-
-.partner-info p:first-child {
-    font-weight: 600;
-    font-size: 1.15rem;
-    color: #FF5C8D;
 }
 
 /* 탭 메뉴 공통 스타일 */
@@ -342,7 +325,7 @@ section h2::after {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border-bottom: 2px solid #FFD7E9;
+    border-bottom: 2px solid var(--light-pink);
     margin: 20px 0 30px 0;
     width: 100%;
 }
@@ -360,12 +343,12 @@ section h2::after {
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-    background-color: #FFF0F5;
+    background-color: var(--lightest-pink);
     margin-right: 8px;
     margin-bottom: 8px;
     border-radius: 10px 10px 0 0;
-    transition: all 0.3s ease;
-    color: #666;
+    transition: var(--transition-normal);
+    color: var(--text-secondary);
     position: relative;
     z-index: 1;
     animation: fadeInText 1.5s forwards;
@@ -374,16 +357,16 @@ section h2::after {
 .partner-tabs label:hover, 
 .forest-tabs label:hover, 
 .visit-tabs label:hover {
-    background-color: #FFD7E9;
-    color: #333;
+    background-color: var(--light-pink);
+    color: var(--text-color);
 }
 
 .partner-tabs input[type="radio"]:checked + label, 
 .forest-tabs input[type="radio"]:checked + label, 
 .visit-tabs input[type="radio"]:checked + label {
-    background-color: #FF8FB1;
+    background-color: var(--secondary-color);
     color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-sm);
 }
 
 /* 탭 콘텐츠 공통 스타일 */
@@ -395,7 +378,7 @@ section h2::after {
     padding: 25px;
     border-radius: 0 10px 10px 10px;
     background-color: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: var(--shadow-md);
     animation: fadeIn 1.5s forwards;
 }
 
@@ -420,7 +403,7 @@ section h2::after {
 }
 
 #partner-tab2-content {
-    background-color: #FFF9F9;
+    background-color: var(--background-color);
     border-radius: 15px;
     padding: 25px;
 }
@@ -428,10 +411,10 @@ section h2::after {
 #partner-tab2-content .qa-list li {
     padding: 15px;
     margin-bottom: 15px;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     background-color: white;
     box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-    border-left: 3px solid #FF8FB1;
+    border-left: 3px solid var(--secondary-color);
     transition: transform 0.2s ease;
     animation: fadeInText 1.5s forwards;
 }
@@ -445,49 +428,9 @@ section h2::after {
 }
 
 .qa-list strong {
-    color: #FF5C8D;
+    color: var(--primary-color);
     display: block;
     margin-bottom: 5px;
-}
-
-/* 서울숲 소개 섹션 스타일 */
-.seoul-forest {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: flex-start;
-}
-
-.forest-info {
-    flex: 1;
-    min-width: 300px;
-}
-
-.forest-info p {
-    margin-bottom: 15px;
-    animation: fadeInText 1.5s forwards;
-}
-
-.forest-image {
-    flex: 1;
-    min-width: 300px;
-    max-width: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    animation: fadeInImage 1.5s forwards;
-    opacity: 0;
-}
-
-.forest-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: opacity 0.3s ease;
-}
-
-.forest-image img:hover {
-    opacity: 0.8;
 }
 
 /* 서울숲 갤러리 스타일 */
@@ -501,7 +444,7 @@ section h2::after {
 .gallery-item {
     flex-basis: calc(33.33% - 20px);
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     background-color: white;
@@ -524,7 +467,7 @@ section h2::after {
     padding: 10px;
     text-align: center;
     font-weight: 500;
-    color: #FF5C8D;
+    color: var(--primary-color);
 }
 
 /* 탭 내용 플렉스 레이아웃 */
@@ -545,45 +488,10 @@ section h2::after {
     line-height: 1.8;
 }
 
-.tab-image {
-    flex: 1;
-    min-width: 300px;
-    max-width: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    position: relative;
-    transition: transform 0.3s ease;
-    animation: fadeInImage 1.5s forwards;
-    opacity: 0;
-}
-
-.tab-image::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    width: 100%;
-    height: 100%;
-    border: 2px dashed #FF8FB1;
-    border-radius: 10px;
-    z-index: -1;
-}
-
-.tab-image:hover {
-    transform: scale(1.02);
-}
-
-.tab-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 /* 방문 정보 섹션 스타일 */
 .info-text h3 {
     font-family: "Bagel Fat One", system-ui;
-    color: #FF5C8D;
+    color: var(--primary-color);
     margin: 25px 0 15px 0;
     font-size: 1.3rem;
     animation: fadeInText 1.5s forwards;
@@ -596,21 +504,24 @@ section h2::after {
     animation: fadeInText 1.5s forwards;
 }
 
+/* 리스트 스타일 통합 */
 .info-list {
     list-style-type: none;
     margin-left: 5px;
 }
 
-.info-list li {
-    padding: 8px 0;
+.info-list li, .sub-list li {
     position: relative;
-    padding-left: 20px;
     animation: fadeInText 1.5s forwards;
+}
+
+.info-list li {
+    padding: 8px 0 8px 20px;
 }
 
 .info-list li::before {
     content: "•";
-    color: #FF5C8D;
+    color: var(--primary-color);
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -618,7 +529,7 @@ section h2::after {
 
 .info-highlight {
     font-weight: 600;
-    color: #FF5C8D;
+    color: var(--primary-color);
 }
 
 .sub-list {
@@ -630,7 +541,6 @@ section h2::after {
 .sub-list li {
     padding: 4px 20px;
     font-size: 0.95rem;
-    animation: fadeInText 1.5s forwards;
 }
 
 .sub-list li::before {
@@ -639,8 +549,8 @@ section h2::after {
 
 /* 주의 사항 경고 박스 */
 .warning-box {
-    background-color: #FFF0F5;
-    border-left: 4px solid #FF5C8D;
+    background-color: var(--lightest-pink);
+    border-left: 4px solid var(--primary-color);
     padding: 15px;
     margin-top: 20px;
     border-radius: 5px;
@@ -652,25 +562,47 @@ section h2::after {
 }
 
 .warning-box strong {
-    color: #FF5C8D;
+    color: var(--primary-color);
 }
 
-/* 산책 경로 이미지 스타일 */
-.route-images {
+/* 산책 경로 이미지 및 개인 사진 스타일 통합 */
+.route-images, .personal-photos {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     margin-top: 30px;
+}
+
+.route-images {
+    gap: 20px;
+}
+
+.personal-photos {
+    justify-content: space-between;
+}
+
+.route-image-item, .personal-photos img {
+    border-radius: var(--border-radius);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    animation: fadeInImage 1.5s forwards;
 }
 
 .route-image-item {
     flex: 1;
     min-width: 300px;
     height: fit-content;
-    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    animation: fadeInImage 1.5s forwards;
+}
+
+.personal-photos img {
+    flex: 1;
+    min-width: 200px;
+    max-width: 32%;
+}
+
+.route-image-item:hover, .personal-photos img:hover {
+    transform: scale(1.05);
 }
 
 .route-image-item img {
@@ -683,7 +615,7 @@ section h2::after {
     padding: 10px;
     text-align: center;
     font-weight: 500;
-    color: #FF5C8D;
+    color: var(--primary-color);
     background-color: white;
 }
 
@@ -695,28 +627,6 @@ section h2::after {
 .feeling-content p {
     margin-bottom: 20px;
     animation: fadeInText 1.5s forwards;
-}
-
-.personal-photos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 30px;
-    justify-content: space-between;
-}
-
-.personal-photos img {
-    flex: 1;
-    min-width: 200px;
-    max-width: 32%;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    animation: fadeInImage 1.5s forwards;
-}
-
-.personal-photos img:hover {
-    transform: scale(1.05);
 }
 
 /* 메뉴 선택에 따른 섹션 표시/숨김 */
@@ -736,12 +646,12 @@ body #menu-visit-info:checked ~ main #visit-info {
 #menu-partner:checked ~ nav .partner-label,
 #menu-seoul-forest:checked ~ nav .seoul-forest-label,
 #menu-visit-info:checked ~ nav .visit-info-label {
-    background-color: #FF5C8D;
+    background-color: var(--primary-color);
 }
 
 /* 푸터 스타일 */
 footer {
-    background-color: #FF8FB1;
+    background-color: var(--secondary-color);
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -755,79 +665,67 @@ footer p {
 
 /* 벚꽃 테마 색상 추가 효과 */
 ::selection {
-    background-color: #FFD7E9;
-    color: #FF5C8D;
+    background-color: var(--light-pink);
+    color: var(--primary-color);
 }
 
 /* 반응형 디자인 */
 @media (max-width: 768px) {
     header {
-        padding: 15px 0;
+    padding: 15px 0;
     }
     
     nav {
-        top: 110px;
+    top: 110px;
     }
     
     main {
-        margin-top: 170px;
+    margin-top: 170px;
     }
     
     section {
-        width: 95%;
-        padding: 20px;
+    width: 95%;
+    padding: 20px;
     }
     
     nav ul {
-        flex-direction: column;
-        align-items: center;
+    flex-direction: column;
+    align-items: center;
     }
     
     nav ul li {
-        margin: 5px 0;
+    margin: 5px 0;
     }
     
-    .intro, .partner, .seoul-forest {
-        flex-direction: column;
+    .intro, .partner, .seoul-forest, .tab-flex, .route-images, .personal-photos {
+    flex-direction: column;
     }
     
     .partner-tabs, .forest-tabs, .visit-tabs {
-        flex-direction: column;
+    flex-direction: column;
     }
     
     .partner-tabs label, .forest-tabs label, .visit-tabs label {
-        margin-bottom: 5px;
-        border-radius: 5px;
-        text-align: center;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
     }
 
     .forest-gallery {
-        justify-content: center;
+    justify-content: center;
     }
     
     .gallery-item {
-        flex-basis: calc(100% - 20px);
-        max-width: 400px;
-    }
-    
-    .tab-flex {
-        flex-direction: column;
+    flex-basis: calc(100% - 20px);
+    max-width: 400px;
     }
     
     .tab-image {
-        margin: 0 auto;
-    }
-    
-    .route-images {
-        flex-direction: column;
-    }
-    
-    .personal-photos {
-        flex-direction: column;
+    margin: 0 auto;
     }
     
     .personal-photos img {
-        max-width: 100%;
-        margin-bottom: 15px;
+    max-width: 100%;
+    margin-bottom: 15px;
     }
 }
