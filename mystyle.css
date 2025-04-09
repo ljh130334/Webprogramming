@@ -666,6 +666,7 @@ section h2::after {
 .route-image-item {
     flex: 1;
     min-width: 300px;
+    height: fit-content;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
@@ -679,30 +680,6 @@ section h2::after {
 }
 
 .route-image-item p {
-    padding: 10px;
-    text-align: center;
-    font-weight: 500;
-    color: #FF5C8D;
-    background-color: white;
-}
-
-/* 교통 정보 지도 스타일 */
-.traffic-map {
-    max-width: 800px;
-    margin: 30px auto 0;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    animation: fadeInImage 1.5s forwards;
-}
-
-.traffic-map img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.traffic-map p {
     padding: 10px;
     text-align: center;
     font-weight: 500;
